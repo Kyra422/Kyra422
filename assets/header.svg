@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title description">
+  <title id="title">Hey, I'm Diego — a Zelda-inspired GitHub profile</title>
+  <desc id="description">Emerald forest shadows, an ancient gold shrine, a floating Triforce, and a sword surround Diego's introduction: aspiring game developer and modding enthusiast. The terminal reads games. mods. side quests. Subtle animations loop every eight seconds.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#061612"/><stop offset=".55" stop-color="#0b2520"/><stop offset="1" stop-color="#102e25"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#dfc77a" stop-opacity=".19"/><stop offset=".5" stop-color="#6ecda9" stop-opacity=".06"/><stop offset="1" stop-color="#6ecda9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2=".6" y2="1">
+      <stop stop-color="#fff2b4"/><stop offset=".45" stop-color="#dfc77a"/><stop offset="1" stop-color="#ad8745"/>
+    </linearGradient>
+    <linearGradient id="blade" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#739a95"/><stop offset=".49" stop-color="#e8f0d8"/><stop offset=".5" stop-color="#b1d6cc"/><stop offset="1" stop-color="#557b77"/>
+    </linearGradient>
+    <linearGradient id="separator" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#dfc77a" stop-opacity=".6"/><stop offset="1" stop-color="#dfc77a" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="canvas"><rect width="1200" height="380" rx="18"/></clipPath>
+    <clipPath id="typing"><rect class="type-mask" x="122" y="266" width="274" height="31"/></clipPath>
+    <filter id="soft-glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .sans { font-family: 'Segoe UI', Arial, sans-serif; }
+      .serif { font-family: Georgia, 'Times New Roman', serif; }
+      .mono { font-family: Consolas, 'Liberation Mono', monospace; }
+      .float { animation: float 8s ease-in-out infinite; }
+      .glow { animation: glow 8s ease-in-out infinite; }
+      .mote { animation: mote 8s ease-in-out infinite; }
+      .mote-alt { animation: mote-alt 8s ease-in-out infinite; }
+      .type-mask { width: 274px; animation: type-mask 8s steps(24,end) infinite; }
+      .cursor { animation: cursor 8s step-end infinite, type-cursor 8s steps(24,end) infinite; }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+      @keyframes glow { 0%,100% { opacity: .85; } 50% { opacity: 1; } }
+      @keyframes mote { 0%,100% { transform: translateY(0); opacity: .4; } 50% { transform: translateY(-14px); opacity: .85; } }
+      @keyframes mote-alt { 0%,100% { transform: translateY(0); opacity: .65; } 50% { transform: translateY(10px); opacity: .25; } }
+      @keyframes type-mask { 0%,12.5%,62.5%,100% { width: 274px; } 25%,31.25% { width: 0px; } }
+      @keyframes type-cursor { 0%,12.5%,62.5%,100% { transform: translateX(0); } 25%,31.25% { transform: translateX(-274px); } }
+      @keyframes cursor { 0%,12.5%,25%,37.5%,50%,62.5%,75%,87.5%,100% { opacity: 1; } 6.25%,18.75%,31.25%,43.75%,56.25%,68.75%,81.25%,93.75% { opacity: 0; } }
+      @media (prefers-reduced-motion: reduce) {
+        .float, .glow, .mote, .mote-alt, .type-mask, .cursor { animation: none; transform: none; opacity: 1; }
+        .type-mask { width: 274px; }
+      }
+    </style>
+  </defs>
+  <g clip-path="url(#canvas)">
+    <rect width="1200" height="380" fill="url(#background)"/>
+    <ellipse cx="953" cy="165" rx="285" ry="245" fill="url(#halo)"/>
+
+    <!-- Quiet forest silhouettes and distant shrine terraces. -->
+    <g fill="#03100d" opacity=".44">
+      <path d="M0 0H30L44 203L80 310H0ZM1200 0H1169L1155 203L1127 310H1200Z"/>
+      <path d="M26 56L92 13L152 0H174L98 27L34 94ZM1176 72L1110 20L1052 0H1016L1099 34L1167 105Z"/>
+      <path d="M631 380L674 310L731 315L769 288L817 309L878 307L916 325L976 320L1029 339L1090 327L1200 348V380Z"/>
+    </g>
+    <g fill="none" stroke="#6ecda9" stroke-width="1" opacity=".1">
+      <path d="M699 342H829L851 319H895M770 359H901L919 341H1040M1055 349H1166"/>
+      <path d="M688 296L710 285L732 296L710 307ZM1107 270L1132 256L1157 270L1132 284Z"/>
+    </g>
+
+    <!-- Etched shrine frame, open corners, and tiny gold ornaments. -->
+    <rect x="15.5" y="15.5" width="1169" height="349" rx="9" fill="none" stroke="#dfc77a" stroke-opacity=".25"/>
+    <path d="M49 27H27V49M1151 27H1173V49M27 331V353H49M1151 353H1173V331" fill="none" stroke="#dfc77a" stroke-opacity=".65"/>
+    <g fill="#dfc77a" opacity=".7">
+      <path d="M587 16L600 8L613 16L600 24ZM588 364L600 357L612 364L600 371Z"/>
+      <path d="M16 180L23 190L16 200L9 190ZM1184 180L1191 190L1184 200L1177 190Z"/>
+    </g>
+    <path d="M47 30H536M664 30H1153M47 350H536M664 350H1153" stroke="#dfc77a" stroke-opacity=".1"/>
+
+    <g class="sans">
+      <path d="M75 60L80 52L85 60L80 68Z" fill="#dfc77a"/>
+      <text x="96" y="65" fill="#dfc77a" font-size="14" font-weight="600" letter-spacing="3">@KYRA422</text>
+      <text x="74" y="201" fill="#bdd4c6" font-size="23" letter-spacing="-.3">Aspiring game developer &amp; modding enthusiast</text>
+      <text x="75" y="321" fill="#83aa98" font-size="11" font-weight="500" letter-spacing="3.2">EXPLORE · BUILD · PLAY</text>
+    </g>
+    <text class="serif" x="70" y="155" fill="#f6efdc" font-size="68" letter-spacing="-2.2">Hey, I'm <tspan fill="#dfc77a">Diego.</tspan></text>
+    <path d="M75 230H642" stroke="url(#separator)"/>
+    <path d="M72 230L77 225L82 230L77 235Z" fill="#dfc77a"/>
+
+    <rect x="74" y="254" width="370" height="48" rx="5" fill="#041310" fill-opacity=".63" stroke="#6ecda9" stroke-opacity=".18"/>
+    <text class="mono" x="95" y="285" fill="#dfc77a" font-size="19">&gt;</text>
+    <text class="mono" x="122" y="285" fill="#6ecda9" font-size="19" clip-path="url(#typing)">games. mods. side quests.</text>
+    <rect class="cursor" x="402" y="269" width="2" height="21" fill="#dfc77a"/>
+
+    <!-- The sacred geometry sits in an engraved shrine ring. -->
+    <g fill="none" stroke="#dfc77a" stroke-width="1">
+      <circle cx="961" cy="183" r="142" stroke-opacity=".12"/>
+      <circle cx="961" cy="183" r="130" stroke-opacity=".19" stroke-dasharray="4 9"/>
+      <path d="M841 119A136 136 0 0 1 1081 119M844 248A136 136 0 0 0 1078 248" stroke-opacity=".32"/>
+      <path d="M961 24V41M961 325V342M802 183H820M1102 183H1120M850 72L862 84M1060 282L1072 294M850 294L862 282M1060 84L1072 72" stroke-opacity=".33"/>
+      <path d="M961 53L1074 248H848Z" stroke-opacity=".11"/>
+    </g>
+
+    <!-- Original sword silhouette: gold crest, emerald grip, split silver blade. -->
+    <g class="float">
+      <path d="M956 194H966L973 279L961 331L949 279Z" fill="url(#blade)" stroke="#8cbcaf" stroke-opacity=".5"/>
+      <path d="M961 203V318" stroke="#eff6df" stroke-opacity=".55"/>
+      <path d="M956 183V158Q961 152 966 158V183" fill="#326454" stroke="#a5cfac" stroke-width="1.5"/>
+      <path d="M956 160L966 166M956 169L966 175M956 178L966 182" stroke="#dfc77a" stroke-opacity=".8"/>
+      <path d="M961 148L969 157L961 165L953 157Z" fill="url(#gold)"/>
+      <path d="M928 191L940 180L953 187H969L982 180L994 191L982 195L971 190L961 198L951 190L940 195Z" fill="#345b63" stroke="#9ebdc0" stroke-width="1.2"/>
+      <path d="M961 184L969 190L961 198L953 190Z" fill="url(#gold)"/>
+
+      <g class="glow" filter="url(#soft-glow)">
+        <path d="M961 69L1002 140H920Z" fill="url(#gold)"/>
+        <path d="M916 147L957 218H875Z" fill="url(#gold)"/>
+        <path d="M1006 147L1047 218H965Z" fill="url(#gold)"/>
+        <path d="M961 78L996 138H926ZM916 156L951 216H881ZM1006 156L1041 216H971Z" fill="none" stroke="#fff5c8" stroke-opacity=".5"/>
+      </g>
+    </g>
+
+    <g fill="#b2e7bd" filter="url(#soft-glow)">
+      <circle class="mote" cx="784" cy="152" r="1.7"/>
+      <circle class="mote-alt" cx="1096" cy="117" r="1.5"/>
+      <circle class="mote" cx="1119" cy="262" r="1.7"/>
+      <circle class="mote-alt" cx="821" cy="282" r="1.2"/>
+      <circle class="mote" cx="1040" cy="43" r="1.1"/>
+    </g>
+  </g>
+</svg>
